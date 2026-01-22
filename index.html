@@ -1,0 +1,2687 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MR CONNECT | Expert WiFi & Networking Solutions | Narayanganj</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f9f9f9;
+        }
+        
+        /* Header & Navigation */
+        header {
+            background: linear-gradient(135deg, #0044cc, #0066ff);
+            color: white;
+            padding: 1.5rem 0;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+        
+        .header-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .logo {
+            font-size: 1.8rem;
+            font-weight: 700;
+            display: flex;
+            align-items: center;
+        }
+        
+        .logo i {
+            margin-right: 10px;
+            color: #ffcc00;
+        }
+        
+        .tagline {
+            font-size: 1.1rem;
+            opacity: 0.9;
+            margin-top: 5px;
+        }
+        
+        nav {
+            background: #222;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 20px;
+        }
+        
+        .nav-links {
+            display: flex;
+            list-style: none;
+        }
+        
+        .nav-links li {
+            position: relative;
+        }
+        
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            padding: 15px 20px;
+            display: block;
+            transition: background 0.3s;
+        }
+        
+        .nav-links a:hover {
+            background: #0044cc;
+        }
+        
+        .mobile-menu-btn {
+            display: none;
+            background: none;
+            border: none;
+            color: white;
+            font-size: 1.5rem;
+            cursor: pointer;
+        }
+        
+        .contact-info {
+            display: flex;
+            align-items: center;
+            color: white;
+            font-weight: 600;
+            flex-direction: column;
+            text-align: right;
+        }
+        
+        .contact-info i {
+            margin-right: 8px;
+            color: #ffcc00;
+        }
+        
+        /* Main Content */
+        .container {
+            max-width: 1200px;
+            margin: 30px auto;
+            padding: 0 20px;
+        }
+        
+        .hero {
+            background: linear-gradient(rgba(0, 68, 204, 0.85), rgba(0, 102, 255, 0.85)), url('https://images.unsplash.com/photo-1542744173-8e7e53415bb0?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 80px 20px;
+            border-radius: 10px;
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        
+        .hero h2 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+        
+        .hero p {
+            font-size: 1.2rem;
+            max-width: 700px;
+            margin: 0 auto 30px;
+        }
+        
+        /* Service Images Section */
+        .service-images {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            margin: 50px 0;
+        }
+        
+        .service-image-card {
+            position: relative;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            height: 250px;
+            transition: transform 0.3s;
+        }
+        
+        .service-image-card:hover {
+            transform: translateY(-10px);
+        }
+        
+        .service-image-card img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s;
+        }
+        
+        .service-image-card:hover img {
+            transform: scale(1.05);
+        }
+        
+        .service-image-overlay {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: linear-gradient(to top, rgba(0, 68, 204, 0.9), transparent);
+            color: white;
+            padding: 20px;
+        }
+        
+        .service-image-overlay h3 {
+            margin-bottom: 5px;
+            font-size: 1.3rem;
+        }
+        
+        /* Review/Comment System */
+        .reviews-section {
+            margin: 60px 0;
+            background: white;
+            padding: 50px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+        }
+        
+        .reviews-section h2 {
+            text-align: center;
+            color: #0044cc;
+            margin-bottom: 40px;
+            font-size: 2.2rem;
+        }
+        
+        .review-form {
+            background: #f8f9fa;
+            padding: 30px;
+            border-radius: 10px;
+            margin-bottom: 40px;
+        }
+        
+        .review-form h3 {
+            color: #333;
+            margin-bottom: 20px;
+            font-size: 1.5rem;
+        }
+        
+        .form-group {
+            margin-bottom: 20px;
+        }
+        
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 600;
+            color: #555;
+        }
+        
+        .form-group input,
+        .form-group textarea,
+        .form-group select {
+            width: 100%;
+            padding: 12px 15px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 1rem;
+            font-family: inherit;
+        }
+        
+        .form-group textarea {
+            resize: vertical;
+            min-height: 120px;
+        }
+        
+        .star-rating {
+            display: flex;
+            flex-direction: row-reverse;
+            justify-content: flex-end;
+            font-size: 1.8rem;
+            color: #ddd;
+        }
+        
+        .star-rating input {
+            display: none;
+        }
+        
+        .star-rating label {
+            cursor: pointer;
+            padding: 0 5px;
+        }
+        
+        .star-rating input:checked ~ label,
+        .star-rating label:hover,
+        .star-rating label:hover ~ label {
+            color: #ffcc00;
+        }
+        
+        .review-image-upload {
+            border: 2px dashed #ddd;
+            padding: 20px;
+            text-align: center;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: border-color 0.3s;
+        }
+        
+        .review-image-upload:hover {
+            border-color: #0044cc;
+        }
+        
+        .review-image-upload i {
+            font-size: 2rem;
+            color: #666;
+            margin-bottom: 10px;
+        }
+        
+        #reviewImagePreview {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 15px;
+        }
+        
+        .image-preview-item {
+            position: relative;
+            width: 100px;
+            height: 100px;
+            border-radius: 5px;
+            overflow: hidden;
+        }
+        
+        .image-preview-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        
+        .remove-image {
+            position: absolute;
+            top: 5px;
+            right: 5px;
+            background: rgba(220, 53, 69, 0.9);
+            color: white;
+            border: none;
+            width: 25px;
+            height: 25px;
+            border-radius: 50%;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .submit-review-btn {
+            background: #28a745;
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            border-radius: 5px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: background 0.3s;
+            width: 100%;
+        }
+        
+        .submit-review-btn:hover {
+            background: #218838;
+        }
+        
+        /* Reviews Display */
+        .reviews-container {
+            margin-top: 40px;
+        }
+        
+        .review-card {
+            background: white;
+            border-radius: 10px;
+            padding: 25px;
+            margin-bottom: 25px;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+            border-left: 4px solid #0044cc;
+        }
+        
+        .review-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 15px;
+            flex-wrap: wrap;
+        }
+        
+        .reviewer-info {
+            display: flex;
+            align-items: center;
+        }
+        
+        .reviewer-avatar {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background: #0044cc;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.2rem;
+            font-weight: 600;
+            margin-right: 15px;
+        }
+        
+        .reviewer-details h4 {
+            font-size: 1.2rem;
+            margin-bottom: 5px;
+        }
+        
+        .review-date {
+            color: #777;
+            font-size: 0.9rem;
+        }
+        
+        .review-rating {
+            color: #ffcc00;
+            font-size: 1.2rem;
+        }
+        
+        .review-content {
+            margin: 15px 0;
+            color: #555;
+            line-height: 1.7;
+        }
+        
+        .review-images {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+            margin: 15px 0;
+        }
+        
+        .review-image {
+            width: 120px;
+            height: 120px;
+            border-radius: 5px;
+            overflow: hidden;
+            cursor: pointer;
+        }
+        
+        .review-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.3s;
+        }
+        
+        .review-image:hover img {
+            transform: scale(1.05);
+        }
+        
+        .review-actions {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 20px;
+            padding-top: 15px;
+            border-top: 1px solid #eee;
+        }
+        
+        .review-likes {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+        
+        .like-btn, .dislike-btn {
+            background: none;
+            border: none;
+            cursor: pointer;
+            font-size: 1.1rem;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            color: #666;
+            transition: color 0.3s;
+        }
+        
+        .like-btn:hover {
+            color: #28a745;
+        }
+        
+        .dislike-btn:hover {
+            color: #dc3545;
+        }
+        
+        .like-btn.active {
+            color: #28a745;
+        }
+        
+        .dislike-btn.active {
+            color: #dc3545;
+        }
+        
+        .comment-btn {
+            background: none;
+            border: none;
+            cursor: pointer;
+            color: #0044cc;
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+        
+        /* Comments Section */
+        .comments-section {
+            margin-top: 20px;
+            padding-left: 20px;
+            border-left: 2px solid #eee;
+        }
+        
+        .comment-form {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+        
+        .comment-input {
+            flex: 1;
+            padding: 10px 15px;
+            border: 1px solid #ddd;
+            border-radius: 25px;
+            font-size: 1rem;
+        }
+        
+        .submit-comment-btn {
+            background: #0044cc;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 25px;
+            cursor: pointer;
+        }
+        
+        .comment {
+            background: #f8f9fa;
+            padding: 15px;
+            border-radius: 10px;
+            margin-bottom: 15px;
+        }
+        
+        .comment-header {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 10px;
+        }
+        
+        .comment-author {
+            font-weight: 600;
+            color: #333;
+        }
+        
+        .comment-date {
+            color: #777;
+            font-size: 0.9rem;
+        }
+        
+        .comment-content {
+            color: #555;
+        }
+        
+        /* Gallery Section */
+        .gallery-section {
+            margin: 60px 0;
+        }
+        
+        .gallery-section h2 {
+            text-align: center;
+            color: #0044cc;
+            margin-bottom: 40px;
+            font-size: 2.2rem;
+        }
+        
+        .gallery-filter {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-bottom: 30px;
+            flex-wrap: wrap;
+        }
+        
+        .filter-btn {
+            background: #f0f0f0;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 25px;
+            cursor: pointer;
+            font-weight: 600;
+            transition: all 0.3s;
+        }
+        
+        .filter-btn.active {
+            background: #0044cc;
+            color: white;
+        }
+        
+        .filter-btn:hover {
+            background: #0044cc;
+            color: white;
+        }
+        
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 20px;
+        }
+        
+        .gallery-item {
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            height: 250px;
+            position: relative;
+            cursor: pointer;
+        }
+        
+        .gallery-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s;
+        }
+        
+        .gallery-item:hover img {
+            transform: scale(1.1);
+        }
+        
+        .gallery-caption {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: rgba(0, 0, 0, 0.7);
+            color: white;
+            padding: 10px;
+            transform: translateY(100%);
+            transition: transform 0.3s;
+        }
+        
+        .gallery-item:hover .gallery-caption {
+            transform: translateY(0);
+        }
+        
+        /* Lightbox Modal */
+        .lightbox-modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.9);
+            z-index: 1000;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .lightbox-content {
+            max-width: 90%;
+            max-height: 90%;
+        }
+        
+        .lightbox-content img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+        
+        .close-lightbox {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            background: none;
+            border: none;
+            color: white;
+            font-size: 2.5rem;
+            cursor: pointer;
+        }
+        
+        .lightbox-nav {
+            position: absolute;
+            top: 50%;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            padding: 0 20px;
+            transform: translateY(-50%);
+        }
+        
+        .lightbox-nav button {
+            background: rgba(255, 255, 255, 0.2);
+            border: none;
+            color: white;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            font-size: 1.5rem;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+        
+        .lightbox-nav button:hover {
+            background: rgba(255, 255, 255, 0.4);
+        }
+        
+        /* Services Grid */
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 25px;
+            margin: 40px 0;
+        }
+        
+        .service-card {
+            background: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+            transition: transform 0.3s, box-shadow 0.3s;
+            border-top: 4px solid #0044cc;
+        }
+        
+        .service-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 25px rgba(0, 0, 0, 0.1);
+        }
+        
+        .service-icon {
+            background: #0044cc;
+            color: white;
+            font-size: 2.5rem;
+            padding: 20px;
+            text-align: center;
+        }
+        
+        .service-content {
+            padding: 25px;
+        }
+        
+        .service-content h3 {
+            color: #0044cc;
+            margin-bottom: 15px;
+            font-size: 1.5rem;
+        }
+        
+        .service-content p {
+            color: #555;
+            margin-bottom: 15px;
+        }
+        
+        .service-features {
+            list-style: none;
+            margin-top: 15px;
+        }
+        
+        .service-features li {
+            padding: 5px 0;
+            border-bottom: 1px dashed #eee;
+        }
+        
+        .service-features li:before {
+            content: "✓";
+            color: #28a745;
+            font-weight: bold;
+            margin-right: 10px;
+        }
+        
+        /* About Section */
+        .about-section {
+            background: white;
+            padding: 50px;
+            border-radius: 10px;
+            margin: 60px 0;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+        }
+        
+        .about-section h2 {
+            color: #0044cc;
+            margin-bottom: 30px;
+            text-align: center;
+            font-size: 2.2rem;
+        }
+        
+        .about-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            align-items: center;
+        }
+        
+        .about-text h3 {
+            color: #333;
+            margin-bottom: 20px;
+            font-size: 1.8rem;
+        }
+        
+        .stats {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            margin-top: 30px;
+        }
+        
+        .stat-item {
+            text-align: center;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 10px;
+        }
+        
+        .stat-number {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: #0044cc;
+            display: block;
+        }
+        
+        .stat-label {
+            color: #666;
+            font-size: 0.9rem;
+            margin-top: 10px;
+        }
+        
+        /* Contact Info Section */
+        .contact-info-section {
+            background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+            padding: 50px;
+            border-radius: 10px;
+            margin: 60px 0;
+            text-align: center;
+        }
+        
+        .contact-info-section h2 {
+            color: #0044cc;
+            margin-bottom: 40px;
+            font-size: 2.2rem;
+        }
+        
+        .contact-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+        }
+        
+        .contact-card {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            transition: transform 0.3s;
+        }
+        
+        .contact-card:hover {
+            transform: translateY(-10px);
+        }
+        
+        .contact-icon {
+            font-size: 2.5rem;
+            color: #0044cc;
+            margin-bottom: 20px;
+        }
+        
+        .contact-card h3 {
+            color: #333;
+            margin-bottom: 15px;
+        }
+        
+        .contact-card p {
+            color: #666;
+            margin-bottom: 10px;
+        }
+        
+        .contact-card a {
+            color: #0044cc;
+            text-decoration: none;
+            font-weight: 600;
+            display: block;
+            margin-top: 15px;
+        }
+        
+        .contact-card a:hover {
+            text-decoration: underline;
+        }
+        
+        /* Call to Action */
+        .cta-section {
+            background: linear-gradient(to right, #28a745, #20c997);
+            color: white;
+            padding: 50px 20px;
+            border-radius: 10px;
+            text-align: center;
+            margin: 60px 0;
+        }
+        
+        .cta-section h2 {
+            font-size: 2.2rem;
+            margin-bottom: 20px;
+        }
+        
+        .btn {
+            display: inline-block;
+            background: #ffcc00;
+            color: #333;
+            padding: 14px 32px;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: 700;
+            font-size: 1.1rem;
+            transition: all 0.3s;
+            border: none;
+            cursor: pointer;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+        
+        .btn:hover {
+            background: #ffdb4d;
+            transform: translateY(-3px);
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+        }
+        
+        .btn-large {
+            padding: 18px 45px;
+            font-size: 1.3rem;
+        }
+        
+        .btn-phone {
+            background: #dc3545;
+            color: white;
+            margin-left: 15px;
+        }
+        
+        .btn-phone:hover {
+            background: #e4606d;
+        }
+        
+        .btn-whatsapp {
+            background: #25D366;
+            color: white;
+            margin-left: 15px;
+        }
+        
+        .btn-whatsapp:hover {
+            background: #1da851;
+        }
+        
+        /* Live Chat Button */
+        .live-chat-btn {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            background: linear-gradient(135deg, #28a745, #20c997);
+            color: white;
+            width: 70px;
+            height: 70px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.8rem;
+            box-shadow: 0 5px 20px rgba(40, 167, 69, 0.4);
+            cursor: pointer;
+            z-index: 999;
+            transition: all 0.3s;
+            border: none;
+        }
+        
+        .live-chat-btn:hover {
+            transform: scale(1.1);
+            box-shadow: 0 8px 25px rgba(40, 167, 69, 0.6);
+        }
+        
+        .live-chat-btn .badge {
+            position: absolute;
+            top: -5px;
+            right: -5px;
+            background: #dc3545;
+            color: white;
+            border-radius: 50%;
+            width: 25px;
+            height: 25px;
+            font-size: 0.8rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+        }
+        
+        /* Live Chat Window */
+        .live-chat-window {
+            position: fixed;
+            bottom: 120px;
+            right: 30px;
+            width: 350px;
+            height: 500px;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+            z-index: 1000;
+            display: none;
+            flex-direction: column;
+            overflow: hidden;
+            border: 1px solid #ddd;
+        }
+        
+        .chat-header {
+            background: linear-gradient(135deg, #0044cc, #0066ff);
+            color: white;
+            padding: 15px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .chat-header h3 {
+            font-size: 1.2rem;
+            display: flex;
+            align-items: center;
+        }
+        
+        .chat-header h3 i {
+            margin-right: 10px;
+        }
+        
+        .close-chat {
+            background: none;
+            border: none;
+            color: white;
+            font-size: 1.5rem;
+            cursor: pointer;
+        }
+        
+        .chat-status {
+            font-size: 0.8rem;
+            margin-top: 5px;
+            display: flex;
+            align-items: center;
+        }
+        
+        .status-indicator {
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            margin-right: 8px;
+        }
+        
+        .status-online {
+            background: #28a745;
+        }
+        
+        .status-away {
+            background: #ffc107;
+        }
+        
+        .chat-body {
+            flex: 1;
+            padding: 15px;
+            overflow-y: auto;
+            background: #f9f9f9;
+        }
+        
+        .chat-messages {
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .message {
+            max-width: 80%;
+            margin-bottom: 15px;
+            padding: 12px 15px;
+            border-radius: 18px;
+            position: relative;
+            animation: fadeIn 0.3s ease-out;
+        }
+        
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        .message.user {
+            background: #e3f2fd;
+            align-self: flex-end;
+            border-bottom-right-radius: 5px;
+        }
+        
+        .message.admin {
+            background: white;
+            align-self: flex-start;
+            border-bottom-left-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+        }
+        
+        .message.admin .sender {
+            color: #0044cc;
+            font-weight: 600;
+            font-size: 0.9rem;
+            margin-bottom: 5px;
+            display: flex;
+            align-items: center;
+        }
+        
+        .message.admin .sender i {
+            margin-right: 5px;
+        }
+        
+        .message .time {
+            font-size: 0.7rem;
+            color: #888;
+            text-align: right;
+            margin-top: 5px;
+        }
+        
+        .chat-footer {
+            border-top: 1px solid #eee;
+            padding: 15px;
+            background: white;
+        }
+        
+        .chat-input {
+            display: flex;
+        }
+        
+        .chat-input input {
+            flex: 1;
+            padding: 12px 15px;
+            border: 1px solid #ddd;
+            border-radius: 25px;
+            font-size: 1rem;
+            outline: none;
+        }
+        
+        .chat-input button {
+            background: #0044cc;
+            color: white;
+            border: none;
+            width: 45px;
+            height: 45px;
+            border-radius: 50%;
+            margin-left: 10px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+        
+        .chat-input button:hover {
+            background: #003399;
+        }
+        
+        .admin-controls {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 10px;
+            font-size: 0.8rem;
+        }
+        
+        .admin-toggle {
+            display: flex;
+            align-items: center;
+        }
+        
+        .switch {
+            position: relative;
+            display: inline-block;
+            width: 40px;
+            height: 20px;
+            margin: 0 10px;
+        }
+        
+        .switch input {
+            opacity: 0;
+            width: 0;
+            height: 0;
+        }
+        
+        .slider {
+            position: absolute;
+            cursor: pointer;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: #ccc;
+            transition: .4s;
+        }
+        
+        .slider:before {
+            position: absolute;
+            content: "";
+            height: 16px;
+            width: 16px;
+            left: 2px;
+            bottom: 2px;
+            background-color: white;
+            transition: .4s;
+        }
+        
+        input:checked + .slider {
+            background-color: #28a745;
+        }
+        
+        input:checked + .slider:before {
+            transform: translateX(20px);
+        }
+        
+        .slider.round {
+            border-radius: 34px;
+        }
+        
+        .slider.round:before {
+            border-radius: 50%;
+        }
+        
+        /* Footer */
+        footer {
+            background: #222;
+            color: white;
+            padding: 40px 0 20px;
+            margin-top: 60px;
+        }
+        
+        .footer-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 40px;
+        }
+        
+        .footer-column h3 {
+            color: #ffcc00;
+            margin-bottom: 20px;
+            font-size: 1.3rem;
+        }
+        
+        .footer-column ul {
+            list-style: none;
+        }
+        
+        .footer-column ul li {
+            margin-bottom: 10px;
+        }
+        
+        .footer-column a {
+            color: #ddd;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        
+        .footer-column a:hover {
+            color: #ffcc00;
+        }
+        
+        .social-icons {
+            display: flex;
+            gap: 15px;
+            margin-top: 20px;
+        }
+        
+        .social-icons a {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+            background: #333;
+            border-radius: 50%;
+            color: white;
+            transition: background 0.3s;
+        }
+        
+        .social-icons a:hover {
+            background: #0044cc;
+        }
+        
+        .copyright {
+            text-align: center;
+            padding-top: 30px;
+            margin-top: 30px;
+            border-top: 1px solid #444;
+            color: #aaa;
+            font-size: 0.9rem;
+        }
+        
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .header-container {
+                flex-direction: column;
+                text-align: center;
+            }
+            
+            .logo {
+                margin-bottom: 10px;
+            }
+            
+            .mobile-menu-btn {
+                display: block;
+            }
+            
+            .nav-links {
+                position: fixed;
+                top: 60px;
+                left: -100%;
+                flex-direction: column;
+                background: #222;
+                width: 100%;
+                transition: left 0.3s;
+                z-index: 99;
+            }
+            
+            .nav-links.active {
+                left: 0;
+            }
+            
+            .nav-links a {
+                padding: 15px 20px;
+                border-bottom: 1px solid #333;
+            }
+            
+            .contact-info {
+                margin-top: 10px;
+                text-align: center;
+            }
+            
+            .hero h2 {
+                font-size: 2rem;
+            }
+            
+            .service-images, .gallery-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .services-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .about-content {
+                grid-template-columns: 1fr;
+            }
+            
+            .stats {
+                grid-template-columns: 1fr;
+            }
+            
+            .cta-buttons {
+                display: flex;
+                flex-direction: column;
+                gap: 15px;
+            }
+            
+            .btn-phone, .btn-whatsapp {
+                margin-left: 0;
+            }
+            
+            .live-chat-window {
+                width: 90%;
+                right: 5%;
+                height: 450px;
+            }
+            
+            .live-chat-btn {
+                bottom: 20px;
+                right: 20px;
+                width: 60px;
+                height: 60px;
+                font-size: 1.5rem;
+            }
+            
+            .gallery-filter {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .review-header {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            
+            .review-rating {
+                margin-top: 10px;
+            }
+        }
+        
+        /* Animation for service cards */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        .service-card, .service-image-card, .gallery-item, .review-card {
+            animation: fadeInUp 0.5s ease-out;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <i class="fas fa-wifi"></i>
+                <div>
+                    <div>MR CONNECT - Expert Networking Solutions</div>
+                    <div class="tagline">আপনার বাসা বা অফিসকে রাখুন সবসময় কানেক্টেড | মদনপুর, বন্দর, নারায়ণগঞ্জ</div>
+                </div>
+            </div>
+            <div class="contact-info">
+                <div><i class="fas fa-phone-alt"></i> <strong>০১৩১৫০২৭৬৭৬</strong></div>
+                <div><i class="fab fa-whatsapp"></i> <strong>০১৩১৫০২৭৬৭৬</strong></div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Navigation -->
+    <nav>
+        <div class="nav-container">
+            <button class="mobile-menu-btn" id="mobileMenuBtn">
+                <i class="fas fa-bars"></i>
+            </button>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home"><i class="fas fa-home"></i> Home</a></li>
+                <li><a href="#services"><i class="fas fa-cogs"></i> Services</a></li>
+                <li><a href="#gallery"><i class="fas fa-images"></i> Gallery</a></li>
+                <li><a href="#reviews"><i class="fas fa-star"></i> Reviews</a></li>
+                <li><a href="#about"><i class="fas fa-info-circle"></i> About Us</a></li>
+                <li><a href="#contact"><i class="fas fa-envelope"></i> Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="container">
+        <!-- Hero Section -->
+        <section class="hero" id="home">
+            <h2>MR CONNECT - Professional WiFi & Networking Solutions</h2>
+            <p>আমরা প্রদান করি বাসা ও অফিসের জন্য হাই-স্পিড ইন্টারনেট, ওয়াইফাই নেটওয়ার্ক সেটআপ, সিসিটিভি ইন্সটলেশন এবং নেটওয়ার্ক সিকিউরিটি সার্ভিস।</p>
+            <div class="cta-buttons">
+                <a href="tel:01315027676" class="btn btn-large btn-phone"><i class="fas fa-phone-alt"></i> Call Now: ০১৩১৫০২৭৬৭৬</a>
+                <a href="https://wa.me/8801315027676" target="_blank" class="btn btn-large btn-whatsapp"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+            </div>
+        </section>
+
+        <!-- Service Images Section -->
+        <section class="service-images">
+            <div class="service-image-card">
+                <img src="https://images.unsplash.com/photo-1598300042247-d088f8ab3a91?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="WiFi Router Installation">
+                <div class="service-image-overlay">
+                    <h3>WiFi Router Setup</h3>
+                    <p>হাই-স্পিড রাউটার ইন্সটলেশন</p>
+                </div>
+            </div>
+            
+            <div class="service-image-card">
+                <img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="CCTV Camera Installation">
+                <div class="service-image-overlay">
+                    <h3>CCTV Installation</h3>
+                    <p>HD সিকিউরিটি ক্যামেরা সেটআপ</p>
+                </div>
+            </div>
+            
+            <div class="service-image-card">
+                <img src="https://images.unsplash.com/photo-1517077304055-6e89abbf09b0?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Network Cabling">
+                <div class="service-image-overlay">
+                    <h3>Network Cabling</h3>
+                    <p>প্রফেশনাল নেটওয়ার্ক ক্যাবলিং</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Reviews Section -->
+        <section class="reviews-section" id="reviews">
+            <h2>Customer Reviews & Ratings</h2>
+            
+            <!-- Review Form -->
+            <div class="review-form">
+                <h3>Write a Review</h3>
+                <form id="reviewForm">
+                    <div class="form-group">
+                        <label for="reviewerName">Your Name *</label>
+                        <input type="text" id="reviewerName" required placeholder="Enter your name">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="reviewService">Service Type</label>
+                        <select id="reviewService">
+                            <option value="">Select a service</option>
+                            <option value="wifi">WiFi Setup</option>
+                            <option value="cctv">CCTV Installation</option>
+                            <option value="network">Networking Solutions</option>
+                            <option value="security">Network Security</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label>Rating *</label>
+                        <div class="star-rating">
+                            <input type="radio" id="star5" name="rating" value="5">
+                            <label for="star5"><i class="fas fa-star"></i></label>
+                            <input type="radio" id="star4" name="rating" value="4">
+                            <label for="star4"><i class="fas fa-star"></i></label>
+                            <input type="radio" id="star3" name="rating" value="3">
+                            <label for="star3"><i class="fas fa-star"></i></label>
+                            <input type="radio" id="star2" name="rating" value="2">
+                            <label for="star2"><i class="fas fa-star"></i></label>
+                            <input type="radio" id="star1" name="rating" value="1">
+                            <label for="star1"><i class="fas fa-star"></i></label>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="reviewText">Your Review *</label>
+                        <textarea id="reviewText" required placeholder="Share your experience with MR CONNECT services..."></textarea>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label>Upload Photos (Optional)</label>
+                        <div class="review-image-upload" id="imageUploadArea">
+                            <i class="fas fa-cloud-upload-alt"></i>
+                            <p>Click to upload photos of your service</p>
+                            <p style="font-size: 0.9rem; color: #777;">Max 3 images, JPG/PNG format</p>
+                        </div>
+                        <input type="file" id="reviewImageInput" multiple accept="image/*" style="display: none;">
+                        <div id="reviewImagePreview"></div>
+                    </div>
+                    
+                    <button type="submit" class="submit-review-btn">
+                        <i class="fas fa-paper-plane"></i> Submit Review
+                    </button>
+                </form>
+            </div>
+            
+            <!-- Reviews Display -->
+            <div class="reviews-container" id="reviewsContainer">
+                <!-- Reviews will be loaded here -->
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section class="about-section" id="about">
+            <h2>About MR CONNECT</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>৩ বছর ধরে বিশ্বস্ত নেটওয়ার্কিং সেবা</h3>
+                    <p>MR CONNECT শুরু হয়েছিল ২০২১ সালে নারায়ণগঞ্জের মদনপুর, বন্দরে। গত তিন বছরে আমরা শতাধিক গ্রাহকের বাসা ও অফিসের নেটওয়ার্কিং সমস্যার সমাধান করে এসেছি।</p>
+                    <p>আমাদের বিশেষজ্ঞ টিম রাউটার সেটআপ, WiFi কনফিগারেশন, CCTV ইন্সটলেশন, এবং নেটওয়ার্ক সিকিউরিটি সার্ভিস প্রদান করে। আমরা শুধু সেটআপই করি না, বরং প্রয়োজনীয় প্রশিক্ষণ ও সাপোর্টও প্রদান করি।</p>
+                    <p>আমাদের লক্ষ্য হল নারায়ণগঞ্জের প্রতিটি বাসা ও ব্যবসা প্রতিষ্ঠানকে উচ্চগতির ইন্টারনেট ও নিরাপদ নেটওয়ার্ক সলিউশন প্রদান করা।</p>
+                    
+                    <div class="stats">
+                        <div class="stat-item">
+                            <span class="stat-number">৩+</span>
+                            <span class="stat-label">বছরের অভিজ্ঞতা</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">১০০+</span>
+                            <span class="stat-label">সন্তুষ্ট গ্রাহক</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">২৪/৭</span>
+                            <span class="stat-label">সাপোর্ট সার্ভিস</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <div class="service-image-card" style="height: 400px;">
+                        <img src="https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="MR CONNECT Team">
+                        <div class="service-image-overlay">
+                            <h3>MR CONNECT Team</h3>
+                            <p>পেশাদার টেকনিশিয়ান দল</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Gallery Section -->
+        <section class="gallery-section" id="gallery">
+            <h2>Our Work Gallery</h2>
+            <div class="gallery-filter">
+                <button class="filter-btn active" data-filter="all">All Works</button>
+                <button class="filter-btn" data-filter="wifi">WiFi Setup</button>
+                <button class="filter-btn" data-filter="cctv">CCTV Installation</button>
+                <button class="filter-btn" data-filter="network">Networking</button>
+                <button class="filter-btn" data-filter="security">Security</button>
+            </div>
+            
+            <div class="gallery-grid">
+                <!-- WiFi Setup Images -->
+                <div class="gallery-item" data-category="wifi">
+                    <img src="https://images.unsplash.com/photo-1598300042247-d088f8ab3a91?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="WiFi Router Installation">
+                    <div class="gallery-caption">রাউটার ইন্সটলেশন</div>
+                </div>
+                
+                <div class="gallery-item" data-category="wifi">
+                    <img src="https://images.unsplash.com/photo-1541140532154-b024d705b90a?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Mesh Network Setup">
+                    <div class="gallery-caption">মেশ নেটওয়ার্ক সেটআপ</div>
+                </div>
+                
+                <!-- CCTV Installation Images -->
+                <div class="gallery-item" data-category="cctv">
+                    <img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="CCTV Camera">
+                    <div class="gallery-caption">HD CCTV ক্যামেরা</div>
+                </div>
+                
+                <div class="gallery-item" data-category="cctv">
+                    <img src="https://images.unsplash.com/photo-1589939705384-5185137a7f0f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Security Camera Setup">
+                    <div class="gallery-caption">সিকিউরিটি সিস্টেম</div>
+                </div>
+                
+                <!-- Networking Images -->
+                <div class="gallery-item" data-category="network">
+                    <img src="https://images.unsplash.com/photo-1517077304055-6e89abbf09b0?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Network Cabling">
+                    <div class="gallery-caption">নেটওয়ার্ক ক্যাবলিং</div>
+                </div>
+                
+                <div class="gallery-item" data-category="network">
+                    <img src="https://images.unsplash.com/photo-1533750349088-cd871a92f312?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Server Room Setup">
+                    <div class="gallery-caption">সার্ভার রুম সেটআপ</div>
+                </div>
+                
+                <!-- Security Images -->
+                <div class="gallery-item" data-category="security">
+                    <img src="https://images.unsplash.com/photo-1563013544-824ae1b704d3?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Network Security">
+                    <div class="gallery-caption">নেটওয়ার্ক সিকিউরিটি</div>
+                </div>
+                
+                <div class="gallery-item" data-category="security">
+                    <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Firewall Setup">
+                    <div class="gallery-caption">ফায়ারওয়াল কনফিগারেশন</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section id="services">
+            <h2 style="text-align: center; margin-bottom: 30px; color: #0044cc; font-size: 2.2rem;">Our Services</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-wifi"></i>
+                    </div>
+                    <div class="service-content">
+                        <h3>WiFi Setup & Configuration</h3>
+                        <p>আমরা রাউটার কনফিগারেশন, রেঞ্জ এক্সটেন্ডার সেটআপ এবং সম্পূর্ণ ওয়্যারলেস নেটওয়ার্ক সলিউশন প্রদান করি।</p>
+                        <ul class="service-features">
+                            <li>রাউটার কনফিগারেশন</li>
+                            <li>WiFi রেঞ্জ এক্সটেনশন</li>
+                            <li>মেশ নেটওয়ার্ক সেটআপ</li>
+                            <li>ইন্টারনেট স্পিড অপ্টিমাইজেশন</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-video"></i>
+                    </div>
+                    <div class="service-content">
+                        <h3>CCTV Installation</h3>
+                        <p>সেরা মানের ক্যামেরা সেটআপ এবং মেইনটেন্যান্স সার্ভিস। বাসা ও অফিসের জন্য সম্পূর্ণ সিকিউরিটি সলিউশন।</p>
+                        <ul class="service-features">
+                            <li>HD/IP ক্যামেরা ইন্সটলেশন</li>
+                            <li>রিমোট মনিটরিং সেটআপ</li>
+                            <li>নাইট ভিশন ক্যামেরা</li>
+                            <li>মোবাইল অ্যাপ কনফিগারেশন</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-network-wired"></i>
+                    </div>
+                    <div class="service-content">
+                        <h3>Networking Solutions</h3>
+                        <p>বাসা, অফিস এবং ব্যবসা প্রতিষ্ঠানের জন্য কাস্টম নেটওয়ার্ক ডিজাইন এবং ইমপ্লিমেন্টেশন।</p>
+                        <ul class="service-features">
+                            <li>ল্যান ক্যাবলিং</li>
+                            <li>সুইচ/হাব কনফিগারেশন</li>
+                            <li>নেটওয়ার্ক ট্রাবলশুটিং</li>
+                            <li>সিকিউরিটি ফায়ারওয়াল</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <div class="service-content">
+                        <h3>Network Security</h3>
+                        <p>আপনার নেটওয়ার্ককে হ্যাকার এবং ম্যালওয়্যার থেকে সুরক্ষিত রাখুন আমাদের এক্সপার্ট সিকিউরিটি সার্ভিসের মাধ্যমে।</p>
+                        <ul class="service-features">
+                            <li>ফায়ারওয়াল সেটআপ</li>
+                            <li>VPN কনফিগারেশন</li>
+                            <li>নেটওয়ার্ক মনিটরিং</li>
+                            <li>সিকিউরিটি অডিট</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Information Section -->
+        <section class="contact-info-section" id="contact">
+            <h2>Contact MR CONNECT</h2>
+            <div class="contact-grid">
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <i class="fas fa-phone-alt"></i>
+                    </div>
+                    <h3>Call Us</h3>
+                    <p>সরাসরি কল করুন আমাদের এক্সপার্ট টিমের সাথে</p>
+                    <a href="tel:01315027676"><i class="fas fa-phone"></i> ০১৩১৫০২৭৬৭৬</a>
+                    <p style="margin-top: 15px;">সার্ভিস টাইম: সকাল ৯টা - রাত ১০টা</p>
+                </div>
+                
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <i class="fab fa-whatsapp"></i>
+                    </div>
+                    <h3>WhatsApp</h3>
+                    <p>WhatsApp-এ মেসেজ করুন যে কোন সমস্যার জন্য</p>
+                    <a href="https://wa.me/8801315027676" target="_blank"><i class="fab fa-whatsapp"></i> ০১৩১৫০২৭৬৭৬</a>
+                    <p style="margin-top: 15px;">২৪ ঘন্টা প্রতিক্রিয়া</p>
+                </div>
+                
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <h3>Our Address</h3>
+                    <p>মদনপুর, বন্দর</p>
+                    <p>নারায়ণগঞ্জ, বাংলাদেশ</p>
+                    <a href="https://maps.google.com/?q=Madanpur,Bandar,Narayanganj" target="_blank"><i class="fas fa-directions"></i> Google Map দেখুন</a>
+                </div>
+                
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <h3>Email Us</h3>
+                    <p>যে কোন প্রশ্ন বা সেবার জন্য ইমেইল করুন</p>
+                    <a href="mailto:masudrr231@gmail.com"><i class="fas fa-envelope"></i> masudrr231@gmail.com</a>
+                    <p style="margin-top: 15px;">দ্রুত রিপ্লাই প্রদান করা হয়</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Call to Action Section -->
+        <section class="cta-section">
+            <h2>Need Professional Networking Help?</h2>
+            <p>আমাদের বিশেষজ্ঞ টিম আপনার নেটওয়ার্ক সমস্যা দ্রুত সমাধান করবে। ২৪/৭ সাপোর্ট সার্ভিস উপলব্ধ।</p>
+            <div class="cta-buttons">
+                <a href="tel:01315027676" class="btn btn-large btn-phone"><i class="fas fa-phone-alt"></i> Call Now: ০১৩১৫০২৭৬৭৬</a>
+                <a href="https://wa.me/8801315027676" target="_blank" class="btn btn-large btn-whatsapp"><i class="fab fa-whatsapp"></i> WhatsApp এ মেসেজ করুন</a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Lightbox Modal -->
+    <div class="lightbox-modal" id="lightboxModal">
+        <button class="close-lightbox" id="closeLightbox">&times;</button>
+        <div class="lightbox-nav">
+            <button id="prevBtn"><i class="fas fa-chevron-left"></i></button>
+            <button id="nextBtn"><i class="fas fa-chevron-right"></i></button>
+        </div>
+        <div class="lightbox-content">
+            <img id="lightboxImage" src="" alt="">
+        </div>
+    </div>
+
+    <!-- Live Chat Components -->
+    <button class="live-chat-btn" id="chatToggleBtn">
+        <i class="fas fa-comments"></i>
+        <span class="badge" id="unreadBadge">0</span>
+    </button>
+    
+    <div class="live-chat-window" id="chatWindow">
+        <div class="chat-header">
+            <h3><i class="fas fa-headset"></i> MR CONNECT Support</h3>
+            <button class="close-chat" id="closeChatBtn">&times;</button>
+        </div>
+        <div class="chat-status">
+            <span class="status-indicator status-online"></span>
+            <span id="statusText">Online - Typically replies instantly</span>
+        </div>
+        <div class="chat-body" id="chatBody">
+            <div class="chat-messages" id="chatMessages">
+                <!-- Messages will appear here -->
+                <div class="message admin">
+                    <div class="sender"><i class="fas fa-user-shield"></i> MR CONNECT Support</div>
+                    <div>Hello! Welcome to MR CONNECT. How can I help you today?</div>
+                    <div class="time">10:00 AM</div>
+                </div>
+                <div class="message user">
+                    <div>Hi, I need help with my WiFi setup</div>
+                    <div class="time">10:02 AM</div>
+                </div>
+                <div class="message admin">
+                    <div class="sender"><i class="fas fa-user-shield"></i> MR CONNECT Support</div>
+                    <div>Sure! I can help you with that. What specific issues are you facing with your WiFi?</div>
+                    <div class="time">10:03 AM</div>
+                </div>
+            </div>
+        </div>
+        <div class="chat-footer">
+            <div class="chat-input">
+                <input type="text" id="messageInput" placeholder="Type your message here...">
+                <button id="sendMessageBtn"><i class="fas fa-paper-plane"></i></button>
+            </div>
+            <!-- Admin controls (visible only when admin mode is on) -->
+            <div class="admin-controls" id="adminControls" style="display: none;">
+                <div class="admin-toggle">
+                    <span>Admin Mode:</span>
+                    <label class="switch">
+                        <input type="checkbox" id="adminToggle">
+                        <span class="slider round"></span>
+                    </label>
+                    <span id="adminStatus">Off</span>
+                </div>
+                <div>
+                    <button class="btn" id="simulateUserBtn" style="padding: 5px 10px; font-size: 0.8rem;">Simulate Customer Message</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer id="contact">
+        <div class="footer-container">
+            <div class="footer-column">
+                <h3>MR CONNECT - Networking Solutions</h3>
+                <p>নারায়ণগঞ্জের মদনপুর, বন্দরে অবস্থিত নেটওয়ার্কিং ও ওয়াইফাই সার্ভিস প্রোভাইডার। আমরা গত ৩ বছর ধরে বাসা ও অফিসের নেটওয়ার্কিং সমস্যার সমাধান দিয়ে আসছি।</p>
+                <div class="social-icons">
+                    <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://wa.me/8801315027676" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                    <a href="mailto:masudrr231@gmail.com"><i class="fas fa-envelope"></i></a>
+                    <a href="tel:01315027676"><i class="fas fa-phone-alt"></i></a>
+                </div>
+            </div>
+            
+            <div class="footer-column">
+                <h3>Our Services</h3>
+                <ul>
+                    <li><a href="#services"><i class="fas fa-chevron-right"></i> WiFi Setup & Configuration</a></li>
+                    <li><a href="#services"><i class="fas fa-chevron-right"></i> CCTV Installation</a></li>
+                    <li><a href="#services"><i class="fas fa-chevron-right"></i> Networking Solutions</a></li>
+                    <li><a href="#services"><i class="fas fa-chevron-right"></i> Network Security</a></li>
+                    <li><a href="#services"><i class="fas fa-chevron-right"></i> Internet Troubleshooting</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-column">
+                <h3>Contact Information</h3>
+                <ul>
+                    <li><i class="fas fa-map-marker-alt"></i> মদনপুর, বন্দর, নারায়ণগঞ্জ</li>
+                    <li><i class="fas fa-phone-alt"></i> ০১৩১৫০২৭৬৭৬</li>
+                    <li><i class="fab fa-whatsapp"></i> ০১৩১৫০২৭৬৭৬</li>
+                    <li><i class="fas fa-envelope"></i> masudrr231@gmail.com</li>
+                    <li><i class="fas fa-clock"></i> সার্ভিস আওয়ার: সকাল ৯টা - রাত ১০টা</li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="copyright">
+            &copy; ২০২৪ MR CONNECT Networking Solutions. All Rights Reserved. | মদনপুর, বন্দর, নারায়ণগঞ্জ
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const navLinks = document.getElementById('navLinks');
+        
+        mobileMenuBtn.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+        
+        // Close mobile menu when clicking on a link
+        document.querySelectorAll('.nav-links a').forEach(link => {
+            link.addEventListener('click', () => {
+                navLinks.classList.remove('active');
+            });
+        });
+        
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                if(targetId === '#') return;
+                
+                const targetElement = document.querySelector(targetId);
+                if(targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 80,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+        
+        // ========== REVIEW SYSTEM FUNCTIONALITY ==========
+        
+        // Review state variables
+        let reviews = [];
+        let reviewImages = [];
+        
+        // DOM elements for reviews
+        const reviewForm = document.getElementById('reviewForm');
+        const reviewerName = document.getElementById('reviewerName');
+        const reviewService = document.getElementById('reviewService');
+        const reviewText = document.getElementById('reviewText');
+        const reviewImageInput = document.getElementById('reviewImageInput');
+        const imageUploadArea = document.getElementById('imageUploadArea');
+        const reviewImagePreview = document.getElementById('reviewImagePreview');
+        const reviewsContainer = document.getElementById('reviewsContainer');
+        
+        // Sample reviews for initial display
+        const sampleReviews = [
+            {
+                id: 1,
+                name: "রহিম আহমেদ",
+                service: "WiFi Setup",
+                rating: 5,
+                review: "অসাধারণ সার্ভিস! MR CONNECT এর টিম আমার বাসার পুরো WiFi সিস্টেম রি-সেটআপ করেছে। এখন পুরো বাড়িতে পুরো সিগন্যাল পাই। বিশেষ করে দুই তলাতেও সমস্যা নাই। ধন্যবাদ!",
+                date: "২০২৪-০৩-১৫",
+                likes: 12,
+                dislikes: 1,
+                images: [],
+                comments: [
+                    {
+                        author: "MR CONNECT Admin",
+                        date: "২০২৪-০৩-১৬",
+                        content: "ধন্যবাদ রহিম ভাই! আপনার সন্তুষ্টিই আমাদের সাফল্য।"
+                    }
+                ]
+            },
+            {
+                id: 2,
+                name: "সালমা খাতুন",
+                service: "CCTV Installation",
+                rating: 4,
+                review: "আমার দোকানের জন্য ৪টি CCTV ক্যামেরা ইন্সটল করেছি। কাজ খুব সুন্দর ও নিয়মমাফিক হয়েছে। মোবাইল অ্যাপ দিয়ে রিমোটে মনিটর করা যায়। রাতেও ভালো ভিডিও পাই।",
+                date: "২০২৪-০৩-১০",
+                likes: 8,
+                dislikes: 0,
+                images: [],
+                comments: []
+            },
+            {
+                id: 3,
+                name: "জহিরুল ইসলাম",
+                service: "Networking Solutions",
+                rating: 5,
+                review: "আমার অফিসের জন্য সম্পূর্ণ নেটওয়ার্কিং সলিউশন দিয়েছে MR CONNECT। ২০টি কম্পিউটার, প্রিন্টার এবং সার্ভার কানেক্ট করেছে। কাজের গুণগতমান দেখে খুবই খুশি।",
+                date: "২০২৪-০৩-০৫",
+                likes: 15,
+                dislikes: 2,
+                images: [],
+                comments: [
+                    {
+                        author: "MR CONNECT Admin",
+                        date: "২০২৪-০৩-০৬",
+                        content: "আপনার অফিসের নেটওয়ার্কিং সিস্টেম সঠিকভাবে কাজ করছে দেখে আমরা খুব খুশি।"
+                    }
+                ]
+            }
+        ];
+        
+        // Load reviews from localStorage or use sample reviews
+        function loadReviews() {
+            const savedReviews = localStorage.getItem('mrConnectReviews');
+            if (savedReviews) {
+                reviews = JSON.parse(savedReviews);
+            } else {
+                reviews = sampleReviews;
+                saveReviews();
+            }
+            displayReviews();
+        }
+        
+        // Save reviews to localStorage
+        function saveReviews() {
+            localStorage.setItem('mrConnectReviews', JSON.stringify(reviews));
+        }
+        
+        // Display all reviews
+        function displayReviews() {
+            reviewsContainer.innerHTML = '';
+            
+            // Sort reviews by date (newest first)
+            const sortedReviews = [...reviews].sort((a, b) => new Date(b.date) - new Date(a.date));
+            
+            sortedReviews.forEach(review => {
+                const reviewCard = createReviewCard(review);
+                reviewsContainer.appendChild(reviewCard);
+            });
+        }
+        
+        // Create review card HTML
+        function createReviewCard(review) {
+            const card = document.createElement('div');
+            card.className = 'review-card';
+            card.dataset.id = review.id;
+            
+            // Generate star rating HTML
+            let stars = '';
+            for (let i = 1; i <= 5; i++) {
+                if (i <= review.rating) {
+                    stars += '<i class="fas fa-star"></i>';
+                } else {
+                    stars += '<i class="far fa-star"></i>';
+                }
+            }
+            
+            // Get first letter for avatar
+            const firstLetter = review.name.charAt(0);
+            
+            // Generate review images HTML
+            let imagesHTML = '';
+            if (review.images && review.images.length > 0) {
+                imagesHTML = '<div class="review-images">';
+                review.images.forEach((img, index) => {
+                    imagesHTML += `
+                        <div class="review-image" onclick="openReviewImage('${img}', ${review.id})">
+                            <img src="${img}" alt="Review image ${index + 1}">
+                        </div>
+                    `;
+                });
+                imagesHTML += '</div>';
+            }
+            
+            // Generate comments HTML
+            let commentsHTML = '';
+            if (review.comments && review.comments.length > 0) {
+                commentsHTML = '<div class="comments-section">';
+                review.comments.forEach(comment => {
+                    commentsHTML += `
+                        <div class="comment">
+                            <div class="comment-header">
+                                <span class="comment-author">${comment.author}</span>
+                                <span class="comment-date">${comment.date}</span>
+                            </div>
+                            <div class="comment-content">${comment.content}</div>
+                        </div>
+                    `;
+                });
+                commentsHTML += '</div>';
+            }
+            
+            card.innerHTML = `
+                <div class="review-header">
+                    <div class="reviewer-info">
+                        <div class="reviewer-avatar">${firstLetter}</div>
+                        <div class="reviewer-details">
+                            <h4>${review.name}</h4>
+                            <div class="review-date">${review.date} | ${review.service}</div>
+                        </div>
+                    </div>
+                    <div class="review-rating">${stars}</div>
+                </div>
+                
+                <div class="review-content">${review.review}</div>
+                
+                ${imagesHTML}
+                
+                <div class="review-actions">
+                    <div class="review-likes">
+                        <button class="like-btn ${review.userLiked ? 'active' : ''}" onclick="likeReview(${review.id})">
+                            <i class="fas fa-thumbs-up"></i> <span class="like-count">${review.likes || 0}</span>
+                        </button>
+                        <button class="dislike-btn ${review.userDisliked ? 'active' : ''}" onclick="dislikeReview(${review.id})">
+                            <i class="fas fa-thumbs-down"></i> <span class="dislike-count">${review.dislikes || 0}</span>
+                        </button>
+                    </div>
+                    <button class="comment-btn" onclick="toggleCommentForm(${review.id})">
+                        <i class="fas fa-comment"></i> Comment
+                    </button>
+                </div>
+                
+                <div class="comment-form-container" id="commentForm-${review.id}" style="display: none;">
+                    <form class="comment-form" onsubmit="submitComment(event, ${review.id})">
+                        <input type="text" class="comment-input" placeholder="Write a comment..." required>
+                        <button type="submit" class="submit-comment-btn">Post</button>
+                    </form>
+                </div>
+                
+                ${commentsHTML}
+            `;
+            
+            return card;
+        }
+        
+        // Handle review form submission
+        reviewForm.addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Get rating value
+            const ratingInput = document.querySelector('input[name="rating"]:checked');
+            if (!ratingInput) {
+                alert('Please select a rating');
+                return;
+            }
+            
+            const rating = parseInt(ratingInput.value);
+            
+            // Create new review object
+            const newReview = {
+                id: Date.now(),
+                name: reviewerName.value,
+                service: reviewService.value || 'Other',
+                rating: rating,
+                review: reviewText.value,
+                date: new Date().toLocaleDateString('bn-BD'),
+                likes: 0,
+                dislikes: 0,
+                userLiked: false,
+                userDisliked: false,
+                images: [...reviewImages],
+                comments: []
+            };
+            
+            // Add to reviews array
+            reviews.unshift(newReview);
+            
+            // Save and display
+            saveReviews();
+            displayReviews();
+            
+            // Reset form
+            reviewForm.reset();
+            reviewImages = [];
+            reviewImagePreview.innerHTML = '';
+            
+            // Show success message
+            alert('Thank you for your review! It has been submitted successfully.');
+        });
+        
+        // Handle image upload
+        imageUploadArea.addEventListener('click', () => {
+            reviewImageInput.click();
+        });
+        
+        reviewImageInput.addEventListener('change', function() {
+            const files = Array.from(this.files);
+            
+            // Limit to 3 images
+            if (files.length + reviewImages.length > 3) {
+                alert('You can only upload up to 3 images');
+                return;
+            }
+            
+            files.forEach(file => {
+                // Check file type
+                if (!file.type.match('image.*')) {
+                    alert('Please upload only image files');
+                    return;
+                }
+                
+                // Check file size (max 5MB)
+                if (file.size > 5 * 1024 * 1024) {
+                    alert('Image size should be less than 5MB');
+                    return;
+                }
+                
+                // Create preview
+                const reader = new FileReader();
+                reader.onload = function(e) {
+                    const imageUrl = e.target.result;
+                    reviewImages.push(imageUrl);
+                    
+                    // Add to preview
+                    const previewItem = document.createElement('div');
+                    previewItem.className = 'image-preview-item';
+                    previewItem.innerHTML = `
+                        <img src="${imageUrl}" alt="Preview">
+                        <button type="button" class="remove-image" onclick="removeReviewImage('${imageUrl}')">&times;</button>
+                    `;
+                    reviewImagePreview.appendChild(previewItem);
+                };
+                reader.readAsDataURL(file);
+            });
+            
+            // Reset input
+            reviewImageInput.value = '';
+        });
+        
+        // Remove review image
+        window.removeReviewImage = function(imageUrl) {
+            reviewImages = reviewImages.filter(img => img !== imageUrl);
+            
+            // Update preview
+            reviewImagePreview.innerHTML = '';
+            reviewImages.forEach(img => {
+                const previewItem = document.createElement('div');
+                previewItem.className = 'image-preview-item';
+                previewItem.innerHTML = `
+                    <img src="${img}" alt="Preview">
+                    <button type="button" class="remove-image" onclick="removeReviewImage('${img}')">&times;</button>
+                `;
+                reviewImagePreview.appendChild(previewItem);
+            });
+        };
+        
+        // Like a review
+        window.likeReview = function(reviewId) {
+            const review = reviews.find(r => r.id === reviewId);
+            if (!review) return;
+            
+            // Check if user already liked
+            if (review.userLiked) {
+                // Unlike
+                review.likes--;
+                review.userLiked = false;
+            } else {
+                // Like
+                review.likes++;
+                review.userLiked = true;
+                
+                // If previously disliked, remove dislike
+                if (review.userDisliked) {
+                    review.dislikes--;
+                    review.userDisliked = false;
+                }
+            }
+            
+            saveReviews();
+            displayReviews();
+        };
+        
+        // Dislike a review
+        window.dislikeReview = function(reviewId) {
+            const review = reviews.find(r => r.id === reviewId);
+            if (!review) return;
+            
+            // Check if user already disliked
+            if (review.userDisliked) {
+                // Remove dislike
+                review.dislikes--;
+                review.userDisliked = false;
+            } else {
+                // Dislike
+                review.dislikes++;
+                review.userDisliked = true;
+                
+                // If previously liked, remove like
+                if (review.userLiked) {
+                    review.likes--;
+                    review.userLiked = false;
+                }
+            }
+            
+            saveReviews();
+            displayReviews();
+        };
+        
+        // Toggle comment form
+        window.toggleCommentForm = function(reviewId) {
+            const commentForm = document.getElementById(`commentForm-${reviewId}`);
+            if (commentForm.style.display === 'none') {
+                commentForm.style.display = 'block';
+                commentForm.querySelector('.comment-input').focus();
+            } else {
+                commentForm.style.display = 'none';
+            }
+        };
+        
+        // Submit comment
+        window.submitComment = function(e, reviewId) {
+            e.preventDefault();
+            
+            const commentInput = e.target.querySelector('.comment-input');
+            const commentText = commentInput.value.trim();
+            
+            if (!commentText) return;
+            
+            const review = reviews.find(r => r.id === reviewId);
+            if (!review) return;
+            
+            // Add comment
+            if (!review.comments) {
+                review.comments = [];
+            }
+            
+            review.comments.push({
+                author: "You",
+                date: new Date().toLocaleDateString('bn-BD'),
+                content: commentText
+            });
+            
+            // Save and display
+            saveReviews();
+            displayReviews();
+            
+            // Reset input
+            commentInput.value = '';
+            
+            // Show success message
+            alert('Your comment has been posted!');
+        };
+        
+        // Open review image in lightbox
+        window.openReviewImage = function(imageSrc, reviewId) {
+            // You can implement a lightbox for review images here
+            // For now, just open in new tab
+            window.open(imageSrc, '_blank');
+        };
+        
+        // ========== GALLERY FUNCTIONALITY ==========
+        
+        // Gallery filter functionality
+        const filterButtons = document.querySelectorAll('.filter-btn');
+        const galleryItems = document.querySelectorAll('.gallery-item');
+        
+        filterButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                // Remove active class from all buttons
+                filterButtons.forEach(btn => btn.classList.remove('active'));
+                // Add active class to clicked button
+                button.classList.add('active');
+                
+                const filterValue = button.getAttribute('data-filter');
+                
+                galleryItems.forEach(item => {
+                    if (filterValue === 'all' || item.getAttribute('data-category') === filterValue) {
+                        item.style.display = 'block';
+                        setTimeout(() => {
+                            item.style.opacity = '1';
+                            item.style.transform = 'scale(1)';
+                        }, 10);
+                    } else {
+                        item.style.opacity = '0';
+                        item.style.transform = 'scale(0.8)';
+                        setTimeout(() => {
+                            item.style.display = 'none';
+                        }, 300);
+                    }
+                });
+            });
+        });
+        
+        // Lightbox functionality
+        const lightboxModal = document.getElementById('lightboxModal');
+        const lightboxImage = document.getElementById('lightboxImage');
+        const closeLightbox = document.getElementById('closeLightbox');
+        const prevBtn = document.getElementById('prevBtn');
+        const nextBtn = document.getElementById('nextBtn');
+        
+        let currentImageIndex = 0;
+        const galleryImages = Array.from(galleryItems);
+        
+        // Open lightbox when gallery item is clicked
+        galleryItems.forEach((item, index) => {
+            item.addEventListener('click', () => {
+                currentImageIndex = index;
+                const imgSrc = item.querySelector('img').src;
+                const imgAlt = item.querySelector('img').alt;
+                
+                lightboxImage.src = imgSrc;
+                lightboxImage.alt = imgAlt;
+                lightboxModal.style.display = 'flex';
+                document.body.style.overflow = 'hidden';
+            });
+        });
+        
+        // Close lightbox
+        closeLightbox.addEventListener('click', () => {
+            lightboxModal.style.display = 'none';
+            document.body.style.overflow = 'auto';
+        });
+        
+        // Close lightbox when clicking outside the image
+        lightboxModal.addEventListener('click', (e) => {
+            if (e.target === lightboxModal) {
+                lightboxModal.style.display = 'none';
+                document.body.style.overflow = 'auto';
+            }
+        });
+        
+        // Previous image
+        prevBtn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            currentImageIndex = (currentImageIndex - 1 + galleryImages.length) % galleryImages.length;
+            const imgSrc = galleryImages[currentImageIndex].querySelector('img').src;
+            const imgAlt = galleryImages[currentImageIndex].querySelector('img').alt;
+            
+            lightboxImage.src = imgSrc;
+            lightboxImage.alt = imgAlt;
+        });
+        
+        // Next image
+        nextBtn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            currentImageIndex = (currentImageIndex + 1) % galleryImages.length;
+            const imgSrc = galleryImages[currentImageIndex].querySelector('img').src;
+            const imgAlt = galleryImages[currentImageIndex].querySelector('img').alt;
+            
+            lightboxImage.src = imgSrc;
+            lightboxImage.alt = imgAlt;
+        });
+        
+        // Keyboard navigation for lightbox
+        document.addEventListener('keydown', (e) => {
+            if (lightboxModal.style.display === 'flex') {
+                if (e.key === 'Escape') {
+                    lightboxModal.style.display = 'none';
+                    document.body.style.overflow = 'auto';
+                } else if (e.key === 'ArrowLeft') {
+                    prevBtn.click();
+                } else if (e.key === 'ArrowRight') {
+                    nextBtn.click();
+                }
+            }
+        });
+        
+        // ========== LIVE CHAT FUNCTIONALITY ==========
+        
+        // Chat state variables
+        let chatOpen = false;
+        let adminMode = false;
+        let unreadMessages = 0;
+        let messageHistory = [];
+        let lastSender = null;
+        let chatSessionActive = true;
+        
+        // DOM elements for chat
+        const chatToggleBtn = document.getElementById('chatToggleBtn');
+        const chatWindow = document.getElementById('chatWindow');
+        const closeChatBtn = document.getElementById('closeChatBtn');
+        const chatMessages = document.getElementById('chatMessages');
+        const messageInput = document.getElementById('messageInput');
+        const sendMessageBtn = document.getElementById('sendMessageBtn');
+        const unreadBadge = document.getElementById('unreadBadge');
+        const adminToggle = document.getElementById('adminToggle');
+        const adminStatus = document.getElementById('adminStatus');
+        const adminControls = document.getElementById('adminControls');
+        const simulateUserBtn = document.getElementById('simulateUserBtn');
+        const statusText = document.getElementById('statusText');
+        
+        // Initialize with some sample messages
+        messageHistory = [
+            { sender: 'admin', name: 'MR CONNECT Support', message: 'Hello! Welcome to MR CONNECT. How can I help you today?', time: '10:00 AM' },
+            { sender: 'user', name: 'You', message: 'Hi, I need help with my WiFi setup', time: '10:02 AM' },
+            { sender: 'admin', name: 'MR CONNECT Support', message: 'Sure! I can help you with that. What specific issues are you facing with your WiFi?', time: '10:03 AM' }
+        ];
+        
+        // Toggle chat window
+        chatToggleBtn.addEventListener('click', () => {
+            chatOpen = !chatOpen;
+            if (chatOpen) {
+                chatWindow.style.display = 'flex';
+                unreadMessages = 0;
+                updateUnreadBadge();
+                messageInput.focus();
+            } else {
+                chatWindow.style.display = 'none';
+            }
+        });
+        
+        // Close chat window
+        closeChatBtn.addEventListener('click', () => {
+            chatOpen = false;
+            chatWindow.style.display = 'none';
+        });
+        
+        // Send message
+        function sendMessage() {
+            const messageText = messageInput.value.trim();
+            if (!messageText) return;
+            
+            // Add message to history
+            const now = new Date();
+            const timeString = now.getHours() + ':' + (now.getMinutes() < 10 ? '0' : '') + now.getMinutes();
+            
+            const newMessage = {
+                sender: 'user',
+                name: 'You',
+                message: messageText,
+                time: timeString
+            };
+            
+            messageHistory.push(newMessage);
+            addMessageToChat(newMessage);
+            messageInput.value = '';
+            
+            // Auto-reply if in admin mode (simulating user chatting with admin)
+            if (!adminMode) {
+                // Simulate admin reply after a delay
+                setTimeout(() => {
+                    const adminReplies = [
+                        "ধন্যবাদ আপনার মেসেজের জন্য! আপনি কোন নেটওয়ার্কিং সমস্যায় ভুগছেন?",
+                        "বুঝতে পারছি। সমস্যাটি সম্পর্কে আরও বিস্তারিত বলবেন?",
+                        "আমাদের টেকনিশিয়ান আপনার অবস্থানে যেতে পারবে। আপনি কি অ্যাপয়েন্টমেন্ট নিতে চান?",
+                        "এটি একটি কমন সমস্যা। আমরা দ্রুত এটি ঠিক করতে পারি। আপনার লোকেশন কোথায়?",
+                        "WiFi সমস্যার জন্য, প্রথমে রাউটারের লাইট চেক করার পরামর্শ দিই। সব লাইট জ্বলছে?",
+                        "নতুন গ্রাহকদের জন্য আমরা ফ্রি কনসাল্টেশন অফার করি। আপনি কি সেটি নিতে চান?",
+                        "আমি আপনাকে সাহায্য করতে পারি। এটি কি আপনার বাসা নাকি অফিসের জন্য?",
+                        "আমাদের টিম ২৪/৭ উপলব্ধ। কখন কলব্যাকের জন্য ভাল সময় হবে?"
+                    ];
+                    
+                    const randomReply = adminReplies[Math.floor(Math.random() * adminReplies.length)];
+                    const adminMessage = {
+                        sender: 'admin',
+                        name: 'MR CONNECT Support',
+                        message: randomReply,
+                        time: new Date().getHours() + ':' + (new Date().getMinutes() < 10 ? '0' : '') + new Date().getMinutes()
+                    };
+                    
+                    messageHistory.push(adminMessage);
+                    addMessageToChat(adminMessage);
+                    
+                    // If chat is closed, increment unread count
+                    if (!chatOpen) {
+                        unreadMessages++;
+                        updateUnreadBadge();
+                    }
+                }, 1000 + Math.random() * 2000);
+            }
+        }
+        
+        // Add message to chat UI
+        function addMessageToChat(message) {
+            const messageDiv = document.createElement('div');
+            messageDiv.className = `message ${message.sender}`;
+            
+            if (message.sender === 'admin') {
+                messageDiv.innerHTML = `
+                    <div class="sender"><i class="fas fa-user-shield"></i> ${message.name}</div>
+                    <div>${message.message}</div>
+                    <div class="time">${message.time}</div>
+                `;
+            } else {
+                messageDiv.innerHTML = `
+                    <div>${message.message}</div>
+                    <div class="time">${message.time}</div>
+                `;
+            }
+            
+            chatMessages.appendChild(messageDiv);
+            
+            // Scroll to bottom
+            chatMessages.scrollTop = chatMessages.scrollHeight;
+            
+            // Update last sender
+            lastSender = message.sender;
+        }
+        
+        // Initialize chat with existing messages
+        function initializeChat() {
+            chatMessages.innerHTML = '';
+            messageHistory.forEach(message => {
+                addMessageToChat(message);
+            });
+        }
+        
+        // Update unread badge
+        function updateUnreadBadge() {
+            if (unreadMessages > 0) {
+                unreadBadge.textContent = unreadMessages;
+                unreadBadge.style.display = 'flex';
+                
+                // Make the chat button pulse when there are unread messages
+                chatToggleBtn.style.animation = 'pulse 2s infinite';
+            } else {
+                unreadBadge.style.display = 'none';
+                chatToggleBtn.style.animation = 'none';
+            }
+        }
+        
+        // Admin mode toggle
+        adminToggle.addEventListener('change', function() {
+            adminMode = this.checked;
+            adminStatus.textContent = adminMode ? 'On' : 'Off';
+            
+            // Show/hide admin controls
+            if (adminMode) {
+                adminControls.style.display = 'flex';
+                statusText.textContent = "Admin Mode Active - You are responding as support";
+            } else {
+                adminControls.style.display = 'none';
+                statusText.textContent = "Online - Typically replies instantly";
+            }
+            
+            // Update chat history to show admin is now responding
+            if (adminMode) {
+                const adminMessage = {
+                    sender: 'admin',
+                    name: 'MR CONNECT Support',
+                    message: 'Admin has joined the chat. How can I assist you?',
+                    time: new Date().getHours() + ':' + (new Date().getMinutes() < 10 ? '0' : '') + new Date().getMinutes()
+                };
+                
+                messageHistory.push(adminMessage);
+                addMessageToChat(adminMessage);
+            }
+        });
+        
+        // Simulate user message (for admin testing)
+        simulateUserBtn.addEventListener('click', function() {
+            const userMessages = [
+                "হ্যালো, কেউ আছেন?",
+                "আমার WiFi ঠিক মতো কাজ করছে না",
+                "CCTV ইন্সটলেশনের জন্য কত চার্জ?",
+                "আপনারা মেশ নেটওয়ার্ক সেটআপ করতে পারবেন?",
+                "আমার ইন্টারনেট কানেকশন ঠিক করতে কাউকে পাঠান",
+                "আপনারা মিরপুর এরিয়াতে সার্ভিস দেন?",
+                "আজকে আপনার们的 Availability কি?",
+                "আমার ক্যামেরা ঠিক মতো রেকর্ড করছে না"
+            ];
+            
+            const randomMessage = userMessages[Math.floor(Math.random() * userMessages.length)];
+            const now = new Date();
+            const timeString = now.getHours() + ':' + (now.getMinutes() < 10 ? '0' : '') + now.getMinutes();
+            
+            const userMessage = {
+                sender: 'user',
+                name: 'Customer',
+                message: randomMessage,
+                time: timeString
+            };
+            
+            messageHistory.push(userMessage);
+            addMessageToChat(userMessage);
+            
+            // If chat is closed, increment unread count
+            if (!chatOpen) {
+                unreadMessages++;
+                updateUnreadBadge();
+            }
+        });
+        
+        // Event listeners
+        sendMessageBtn.addEventListener('click', sendMessage);
+        messageInput.addEventListener('keypress', function(e) {
+            if (e.key === 'Enter') {
+                sendMessage();
+            }
+        });
+        
+        // Add CSS for pulse animation
+        const style = document.createElement('style');
+        style.textContent = `
+            @keyframes pulse {
+                0% { box-shadow: 0 0 0 0 rgba(40, 167, 69, 0.7); }
+                70% { box-shadow: 0 0 0 15px rgba(40, 167, 69, 0); }
+                100% { box-shadow: 0 0 0 0 rgba(40, 167, 69, 0); }
+            }
+        `;
+        document.head.appendChild(style);
+        
+        // Initialize everything
+        function initialize() {
+            // Initialize the chat
+            initializeChat();
+            
+            // Load reviews
+            loadReviews();
+            
+            // Auto-open chat after 10 seconds if not opened by user
+            setTimeout(() => {
+                if (!chatOpen && messageHistory.length <= 3) {
+                    chatToggleBtn.click();
+                }
+            }, 10000);
+            
+            // Simulate user joining chat after 15 seconds if chat is open
+            setTimeout(() => {
+                if (chatOpen && !adminMode) {
+                    const joinMessage = {
+                        sender: 'system',
+                        name: 'System',
+                        message: 'Customer has joined the chat',
+                        time: new Date().getHours() + ':' + (new Date().getMinutes() < 10 ? '0' : '') + new Date().getMinutes()
+                    };
+                    
+                    messageHistory.push(joinMessage);
+                    
+                    const systemDiv = document.createElement('div');
+                    systemDiv.className = 'message admin';
+                    systemDiv.style.background = '#f0f0f0';
+                    systemDiv.style.color = '#666';
+                    systemDiv.style.fontSize = '0.9rem';
+                    systemDiv.style.textAlign = 'center';
+                    systemDiv.style.maxWidth = '100%';
+                    systemDiv.innerHTML = '<div>গ্রাহক চ্যাটে যুক্ত হয়েছেন</div>';
+                    
+                    chatMessages.appendChild(systemDiv);
+                    chatMessages.scrollTop = chatMessages.scrollHeight;
+                }
+            }, 15000);
+        }
+        
+        // Start the application
+        initialize();
+    </script>
+</body>
+</html>
